@@ -1,0 +1,29 @@
+title: Kat's Blog
+description: >-
+  A personal blog powered by Jekyll and hosted on Netlify.
+url: "https://katsblog.netlify.app"
+baseurl: ""
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima theme settings
+minima:
+  skin: classic
+  social_links:
+    - { platform: github, user_url: "https://github.com/YOUR_USERNAME" }
+
+# Build settings
+markdown: Kramdown
+permalink: /:year/:month/:day/:title/
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
