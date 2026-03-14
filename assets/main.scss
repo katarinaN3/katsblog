@@ -1,0 +1,40 @@
+---
+---
+
+@import "minima";
+
+body {
+  font-size: 14px;
+}
+
+.post-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 4px 0;
+}
+
+.post-list li h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.post-link {
+  font-size: 14px;
+}
+
+.post-meta {
+  font-size: 14px;
+  white-space: nowrap;
+  min-width: 100px;
+  font-variant-numeric: tabular-nums;
+}
+
+@media screen and (max-width: 600px) {
+  .post-list li {
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 0;
+  }
+}
